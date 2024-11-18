@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messagerie de Lucille 🌸</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <header>
+            <h1>Messagerie de Lucille 🌸</h1>
+            <p id="welcome-message"></p>
+        </header>
+        <div id="chat-window" class="chat-window">
+            <!-- Messages will be dynamically added here -->
+        </div>
+        <form id="message-form" class="message-form">
+            <input type="text" id="message" placeholder="Écrivez votre message ici" required class="input-message">
+            <button type="submit" class="send-button">Envoyer</button>
+        </form>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>
